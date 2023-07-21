@@ -1,15 +1,23 @@
 package com.endava.java2023Project.Model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity(name="Venue")
 @Table(name = "Venue",schema ="dbo")
 public class Venue {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "venue_id")
-    private int venue_id;
+    @Column(name = "venueId")
+    private Integer venueId;
 
     @Column(name ="location",length = 30)
     private String location;
@@ -22,35 +30,5 @@ public class Venue {
     private int capacity;
 
 
-    public void setVenue_id(int venue_id) {
-        this.venue_id = venue_id;
-    }
 
-    public int getVenue_id() {
-        return venue_id;
-    }
-
-    public int getCapacity() {
-        return capacity;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 }
