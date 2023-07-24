@@ -19,7 +19,7 @@ private final OrdersService ordersService;
     }
 
     @GetMapping("/api/orders/{userId}")
-    public List<GetOrderDTO> getOrders(@PathVariable("userId") Integer userId){
+    public List<GetOrderDTO> getOrders(@PathVariable("userId") int userId){
         List<Orders> orders = ordersService.getOrdersByUserId(userId);
         List<GetOrderDTO> result = new ArrayList<>();
         for(Orders o : orders) {

@@ -11,8 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class OrderDTO {
 
-    private Integer eventId;
-    private Integer ticketCategoryId;
+    private int eventId;
+    private int ticketCategoryId;
     private int numberOfTickets;
 }
 

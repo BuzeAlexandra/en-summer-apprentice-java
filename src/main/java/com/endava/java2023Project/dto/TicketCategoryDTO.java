@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class TicketCategoryDTO {
 
-    private Integer ticketCategoryId;
+    private int ticketCategoryId;
     private String description;
     private int price;
 

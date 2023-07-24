@@ -15,7 +15,7 @@ public class EventController {
         this.eventService = eventService;
     }
     @GetMapping("/api/events/{venueId}/{eventTypeId}")
-    public List<EventDTO> getEvents(@PathVariable("venueId") Integer venueId, @PathVariable("eventTypeId") String eventTypeId){
+    public List<EventDTO> getEvents(@PathVariable("venueId") int venueId, @PathVariable("eventTypeId") String eventTypeId){
         return eventService.findEventsByVenueIdAndEventTypeId(venueId,eventTypeId);
 
 

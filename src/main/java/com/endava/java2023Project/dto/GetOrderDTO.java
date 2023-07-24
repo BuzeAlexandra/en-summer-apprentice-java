@@ -12,9 +12,9 @@ import java.util.Date;
 @AllArgsConstructor
 
 public class GetOrderDTO {
-   private Integer eventId;
+   private int eventId;
    private Date timestamp;
-   private Integer ticketCategoryId;
+   private int ticketCategoryId;
    private int numberOfTickets;
    private long totalPrice;
 
